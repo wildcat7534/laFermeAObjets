@@ -1,0 +1,455 @@
+template{
+	width: 120px;
+}
+template .corne {
+	width: 20px;
+}
+template .tete {
+	width: 20px;
+}
+template .corps {
+	width: 20px;
+}
+template .queue {
+	width: 20px;
+}
+img {
+	width: 100%;
+}
+body {
+	background-image: url(images/metal5qs.jpg);
+}
+@font-face{
+    font-family:"karatula";
+    src: url('fonts/karatula/KARAI.ttf');
+}@font-face{
+    font-family:"karatulaB";
+    src: url('fonts/karatula/KARAB.ttf');
+}@font-face{
+    font-family:"karatulaI";
+    src: url('fonts/karatula/KARABI.ttf');
+}@font-face{
+    font-family:"karatulaN";
+    src: url('fonts/karatula/KARAN.ttf');
+}
+#plaqueIDLaboratoire {
+	position: absolute;
+	top: 1%;
+	height: 50px;
+	left: 80.7vh;
+	width: 400px;
+}
+#nomLaboratoire {
+	position: absolute;
+	top: 20%;
+	right: 0;
+	color: blueviolet;
+	font-family: "karatulaN";
+	font-size: 1.7em;
+	width: 100%;
+}
+#nomLaboratoire.alert {
+	color: red;
+}
+#ligneDanger{
+	width: 100%;
+	height: 100%;
+	position: relative;
+	left: 0;
+	top: 0;
+}
+#verger {
+	position: absolute;
+	left: 38.2vw;
+	z-index: 1;
+	width: max-content;
+	top: 7%;
+}
+.superlevier,
+#génome,
+.levier {
+	cursor: pointer;
+}
+datalist {
+  position: absolute;
+  background-color: lightgrey;
+  font-family: sans-serif;
+  font-size: 0.8rem;
+}
+option {
+  background-color: #bbb;
+  padding: 4px;
+  margin-bottom: 1px;
+  cursor: pointer;
+}
+.corps{
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	width: 50px;
+}
+#génome {
+	background-color: black;
+	color: gold;
+}
+.choseGénérée{
+	position: absolute;
+	z-index: 9;
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+}
+.choseGénérée:hover {
+	cursor: pointer, url('images/loupe.png') 5 5;
+}
+.choseGénérée.chaton{
+}
+.choseGénérée.puppy{
+}
+.choseGénérée.caimenBB{
+}
+.chat{}.chien{}
+.corpsImg{
+}.tetesImg{
+}.queueImg{
+/*	width: 71px;
+*/	z-index: -1;
+	bottom: 0;
+	margin-left: -7px;
+	position: absolute;
+	left: 100%;
+	bottom: 2%;
+	width: 60%;
+}
+.choseGénérée[hidden] {
+	visibility: collapse;
+}
+.modale{
+/*	visibility: collapse;
+*/	position: absolute;
+}
+#nomAnimal{
+	visibility: hidden;
+	background-color: blueviolet;
+	font-size: 0.8em;
+	width: fit-content;
+	margin: 0 auto;
+}
+.park1{
+	position: absolute;
+	z-index: 3;
+	left: 0;
+	top: 0;
+	display: flex;
+	justify-content: center;
+	align-content: center;
+	align-items: flex-start;
+	flex-direction: row;
+	flex-wrap: wrap;
+	box-shadow: 25px 1px 1px 0px rgba(0, 0, 0, 0.4);
+	width: 80vh;
+	height: 60vh;
+/*	border: solid 2px purple;	
+*/	background: url(images/pelouse.png);
+}
+.park1:hover {
+	cursor: url(images/loupe.png) 8 8 , pointer ;
+}
+#porte{
+	position: absolute;
+	z-index: 13;
+	top: 0;
+	width: 84px;
+	height: 100px;
+	left: 40%;
+	box-shadow: 8px -52px 7px 5px rgba(0, 0, 0, 0.7);
+}
+#gamelle{
+	width: 60px;
+	height: 40px;
+	position: absolute;
+	z-index: 3;
+	bottom: 40px;
+	right: 50px;
+	background: url(images/tapis.png);
+}
+.bordureSelected {
+	border: dashed 5px greenyellow;
+  border-radius: 23%;
+}
+.bordureSelectedChat {
+	border: solid 4px indianred;
+  border-radius: 23%;
+}
+.contextPark1 {
+	visibility: collapse;
+	position: absolute;
+	z-index: 12;
+	top: 0;
+	left: 0;
+	background-color: indianred;
+	border: ridge 7px purple;
+}
+.contextPark1 ul{
+	margin: 6%;
+	padding-left: 0;
+}
+.contextPark1 ul li{
+	list-style: none;
+	width: 88px;
+}
+.contextOpt1 {
+}
+#pince{
+	position: absolute;
+	z-index: 20;
+	top: 0;
+	left: 500px;
+	width: 100%;
+}
+#pince #pinceBase{
+	width: 70px;
+}
+#beam {
+	animation-duration: 1s;
+	width: 0.7%;
+	position: absolute;
+	top: 0%;
+	left: 29px;
+	z-index: -1;
+	box-shadow: 9px -8px 5px 1px rgba(0, 0, 0, 0.5);
+}
+@keyframes shot{
+	0%{top: 0%;}
+	100%{top: 10000%;}
+}
+.bulleCat{
+	visibility: hidden;
+	position: absolute;
+	left: 100%;
+	width: 80px;
+}
+.bulleChien{
+	visibility: hidden;
+}
+.afficherBulle {
+	visibility: visible;
+}
+.catBulle{
+	position: absolute;
+	left: 90px;
+	top: 10px;
+	font-size: 1em;
+	background-color: white;
+	border-radius: 18%;
+}
+#catBulle2{
+	position: absolute;
+	left: 380px;
+	top: 10px;
+	font-size: 1em;
+	background-color: white;
+	border-radius: 18%;
+}
+#barriereBottom{
+	position: absolute;
+	z-index:  10;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	height: 75px;
+	background-image: url(images/barriere.png);
+	background-size: contain;
+	pointer-events: none;
+}
+#barriereRight{
+	position: absolute;
+	z-index:  10;
+	bottom: 0;
+	right: 0;
+	width: 32px;
+	height: 100%;
+	background-image: url(images/barriereCoté.png);
+	pointer-events: none;
+}
+/*//////PARK 2/////*/
+.park2{
+	position: absolute;
+	right: 0;
+	top: 0;
+	display: flex;
+	justify-content: center;
+	align-content: center;
+	align-items: flex-start;
+	flex-direction: row;
+	flex-wrap: wrap;
+	background-color: indianred;
+	background-size: cover;
+	width: 36vw;
+	height: 60vh;
+	/*border: solid 2px purple;	*/
+}
+.cube {
+  transform: scaleX(1) scaleY(1) scaleZ(1) rotateX(15deg) rotateY(39deg) rotateZ(15deg) translateX(18px) translateY(7px) translateZ(0px) skewX(0deg) skewY(4deg);
+  background-color: black;
+}
+.cube-wrap {
+  perspective: 1000px;
+  perspective-origin: 50% 116%;
+}
+.sec_commande{
+	display: flex;
+	flex-wrap: wrap;
+	position: absolute;
+	top: 65%;
+	width: 97vw;
+	height: 30vh;
+	display: flex;
+	flex-direction: column;
+	background: lightblue;
+	border: solid 3px purple;
+	left: 1%;
+	box-sizing: border-box;
+	background-image: url(images/metal1.jpg);
+	background-size: contain;
+}
+#cmd_gauche, 
+#cmd_droite {
+	display: flex;
+	justify-content: start;
+}
+#cmd_gauche figure, 
+#cmd_droite figure {
+	max-width: 20px;
+	max-height: 20px;
+}
+#cmd_haut{
+	position: absolute;
+	width: 100%;
+	height: 15px;
+	background-image: url(images/cable.png);
+	background-size: contain;
+	top: -8px;
+}
+#cmd_bas{
+	position: absolute;
+	width: 100%;
+	height: 15px;
+	background-image: url(images/cable.png);
+	background-size: contain;
+	bottom: -7px;
+}
+#command1{
+	margin: 5px;
+	width: 200px;
+	height: 208px;
+	background: lightpurple;
+	border: solid 2px black;
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: column;
+}#command2{
+	margin: 5px;
+	width: 200px;
+	height: 208px;
+	background: lightpurple;
+	border: solid 2px black;
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: column;
+}#command3{
+	position: relative;
+	margin: 5px;
+	width: 290px;
+	height: 208px;
+	background: lightpurple;
+	border: solid 2px black;
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: column;
+	background-color: black;
+	color: green;
+	font-size: 0.8em;
+	overflow: hidden;
+}
+#command4{
+	position: relative;
+	margin: 5px;
+	width: 200px;
+	height: 208px;
+	background: lightpurple;
+	border: solid 2px black;
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: column;
+	background-color: black;
+	color: green;
+	font-size: 0.8em;
+	overflow: hidden;
+}
+#command1 span{
+border: solid 2px red;
+font-size: 1.6em;
+margin: 14px 0%;
+text-align: center;
+}
+#command1 label {
+	background-color: brown;
+	text-align: center;
+}
+#command3 .consoleSpan, 
+#command4 .consoleSpan{
+	top: -6px;
+	position: absolute;
+	width: 100%;
+	background-color: greenyellow;
+	text-align: center;
+}
+#command3 .consoleCMD, 
+#command4 .consoleCMD{
+	padding-top: 25px;
+	padding-left: 10px;
+	font-size: 0.75em;
+}
+#command4 {
+
+}
+#laser{
+	color: red;
+	text-align: center;
+	background-color: black;
+}
+.levierLaser{
+	margin: 0 auto;
+}
+#instanciation {
+	display: flex;
+	justify-content: space-between;
+}
+#instanciationPar10 {
+	display: flex;
+	justify-content: space-between;
+}
+#instanciation .superlevier {
+	width: 63%;
+}
+.desintegrateur{
+	position: absolute;
+	right: 22%;
+	top: 65%;
+	border: yellow 3px ridge;
+	background-color: black;
+	background-size: 871%;
+}
+.desintegrateur img{
+}
+.desintegrateur span{
+	position: absolute;
+	bottom: -20px;
+	color: red;
+}
+.sapin {
+	position: absolute;
+	right: 60px;
+	top: 30px;
+}
